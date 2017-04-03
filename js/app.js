@@ -47,7 +47,7 @@ $('section').each(function(){
    
    $(window).scroll(function(){
        var scrollTop = $(window).scrollTop();
-       if(offsetTop - menuHeight < scrollTop && offsetTop + height - menuHeight > scrollTop) {
+       if(offsetTop - menuHeight < scrollTop && offsetTop - menuHeight + height  > scrollTop) {
            $itemMenu.addClass('active');
        } else {
            $itemMenu.removeClass('active');

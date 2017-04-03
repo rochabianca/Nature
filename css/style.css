@@ -287,6 +287,19 @@ img {
 		width: 100%;
 		text-align: center;
 	}
+
+	.menu nav li a::after {
+	content: '';
+	display: block;
+	background: #56CC9D;
+	height: 2px;
+	width: 0;
+	transition: .3s;
+}
+
+.menu nav li a:hover::after, .menu nav li a.active::after {
+	width: 100%;
+}
 }
 
 
